@@ -29,7 +29,7 @@ public class Bailes {
             XPathQueryService xpqs = (XPathQueryService)col.getService("XPathQueryService", "1.0");
             xpqs.setProperty("indent", "yes");
 
-            ResourceSet result = xpqs.query("/bailes/baile");
+            ResourceSet result = xpqs.query("/bailes/baile/precio");
             ResourceIterator i = result.getIterator();
             Resource res = null;
             while(i.hasMoreResources()) {
